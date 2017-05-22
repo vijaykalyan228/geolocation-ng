@@ -1,0 +1,64 @@
+<table>
+  <tr>
+    <td>
+      <b>Tracked Address</b>
+    </td>
+    <td>
+      {{addressStr}}
+    </td>
+  </tr>
+</table>
+
+
+<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+
+<div id="locationField">
+  <input id="autocomplete" placeholder="Enter your address" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" class="form-control" #search [formControl]="searchControl">
+</div>
+
+<form #mapsForm="ngForm">
+  <table id="address">
+    <tr>
+      <td class="label">Street address</td>
+      <td class="slimField">
+        <input class="field" id="street_number" name="street_number"
+         ngControl="street_number" [(ngModel)]="addr.street_number">
+      </td>
+      <td class="wideField" colspan="2">
+        <input class="field" id="route" name="route"
+         ngControl="route" [(ngModel)]="addr.route">
+      </td>
+    </tr>
+    <tr>
+      <td class="label">City</td>
+      <td class="wideField" colspan="3">
+        <input class="field" id="locality" name="locality"
+         ngControl="locality" [(ngModel)]="addr.locality">
+      </td>
+    </tr>
+    <tr>
+      <td class="label">State</td>
+      <td class="slimField">
+        <input class="field" id="administrative_area_level_1" name="administrative_area_level_1"
+         ngControl="administrative_area_level_1" [(ngModel)]="addr.administrative_area_level_1">
+      </td>
+      <td class="label">Zip code</td>
+      <td class="wideField">
+        <input class="field" id="postal_code" name="postal_code"
+         ngControl="postal_code" [(ngModel)]="addr.postal_code">
+      </td>
+    </tr>
+    <tr>
+      <td class="label">Country</td>
+      <td class="wideField" colspan="3">
+        <input class="field" id="country" name="country"
+         ngControl="country" [(ngModel)]="addr.country">
+      </td>
+    </tr>
+  </table>
+</form>
+
+
+<div>
+  <router-outlet></router-outlet>
+</div>
