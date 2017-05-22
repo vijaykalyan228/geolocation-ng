@@ -19,7 +19,7 @@ Perform the following steps:
   3. `npm install -g @angular/cli@latest`
 
 then remove your local node_modules folder and execute:
-  4. `npm install --save-dev @angular/cli@latest`
+  4. `npm install --save-dev @angular/cli@latest` and then,
   5. `npm install`
 
 
