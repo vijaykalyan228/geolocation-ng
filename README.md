@@ -10,6 +10,19 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Module build failed: TypeError: Cannot read property 'newLine' of undefined
+
+Perform the following steps:
+
+  1. `npm uninstall -g @angular/cli`
+  2. `npm cache clean`
+  3. `npm install -g @angular/cli@latest`
+
+then remove your local node_modules folder and execute:
+  4. `npm install --save-dev @angular/cli@latest`
+  5. `npm install`
+
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
