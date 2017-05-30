@@ -33,8 +33,8 @@ describe('geolocation App', () => {
       done();
     },5000);
     var addressStr = element(by.binding('addressStr'));
-    // expect(addressStr.getText()).toContain("Panvel");
-    expect(d).toBe('ok');
+    expect(addressStr.getText()).toContain("Panvel");
+    // expect(d).toBe('ok');
   }
 
   it('should show null for addressStr if user denies Location Tracking'), (done) => {
