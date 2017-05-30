@@ -9,7 +9,12 @@ exports.config = {
     './e2e/**/*.e2e-spec.ts'
   ],
   capabilities: {
-    'browserName': 'chrome'
+    'browserName': 'chrome',
+    chromeOptions: {
+      prefs: {
+        "profile.default_content_setting_values.geolocation": 1,
+      }
+    }
   },
   directConnect: true,
   baseUrl: 'http://localhost:4200/',
