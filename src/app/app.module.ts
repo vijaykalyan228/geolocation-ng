@@ -3,10 +3,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import {} from '@types/googlemaps';
 
 import { AppComponent } from './app.component';
 import { AgmCoreModule } from 'angular2-google-maps/core';
-import {} from '@types/googlemaps';
 import { ParamsComponent } from './params/params.component';
 import {routing, appRoutingProviders} from './app.routing';
 

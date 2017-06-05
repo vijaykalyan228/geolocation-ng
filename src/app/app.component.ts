@@ -6,6 +6,7 @@ import { MapsAPILoader } from 'angular2-google-maps/core';
 import {ActivatedRoute} from "@angular/router";
 
 import {Address} from "./address";
+import {} from '@types/googlemaps';
 
 @Component({
   selector: 'app-root',
